@@ -1,31 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padiku</title>    
+    <title>Tentang — Padiku</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-   
+
     <header class="site-header">
         <h1 class="logo">Padiku</h1>
         <nav class="nav-menu">
-            <a href="index.html" class="nav-item">Beranda</a>
-            <a href="kategori.html" class="nav-item">Kategori</a>
-            <a href="artikel.html" class="nav-item">Artikel</a>
-            <a href="tentang.html" class="nav-item">Tentang</a>
-            <a href="kontak.html" class="nav-item">Kontak</a>
+            <ul>
+                <li><a href="index.html" class="nav-item">Beranda</a></li>
+                <li><a href="kategori.html" class="nav-item">Kategori</a></li>
+                <li><a href="artikel.html" class="nav-item">Artikel</a></li>
+                <li><a href="tentang.html" class="nav-item active">Tentang</a></li>
+                <li><a href="kontak.html" class="nav-item">Kontak</a></li>
+            </ul>
         </nav>
     </header>
 
-
     <main>
-        <h2>tentang</h2>
-        <p>website ini adalah website soal edukasi semua tentang padi</p>
+        <div class="container">
+            <div class="page-title">
+                <h2>Tentang Padiku</h2>
+                <p>Kenali siapa kami dan apa yang kami lakukan.</p>
+            </div>
+
+            <section class="kategori-item">
+                <h3>Apa itu Padiku?</h3>
+                <p>Padiku adalah website edukasi seputar padi — dari cara nanam, basmi hama, sampai olah sekam jadi berguna.</p>
+            </section>
+
+            <section class="kategori-item">
+                <h3>Tujuan Kami</h3>
+                <p>Jadi tempat belajar yang ramah buat petani, penyuluh, mahasiswa, dan siapa aja yang tertarik sama padi.</p>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 padiku</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Padiku</p>
     </footer>
+
 </body>
 </html>

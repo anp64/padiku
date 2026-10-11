@@ -34,6 +34,10 @@ h1 { font-size: 28px; }
 h2 { font-size: 26px; }
 h3 { font-size: 20px; }
 
+p {
+    font-size: 16px;
+}
+
 a {
     color: var(--warna-utama);
     text-decoration: none;
@@ -62,11 +66,16 @@ a:hover {
     letter-spacing: 1px;
 }
 
-
 .nav-menu ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     gap: 20px;
+}
+
+.nav-menu li {
+    display: inline-block;
 }
 
 .nav-item {
@@ -81,6 +90,7 @@ a:hover {
 .nav-item:hover {
     background-color: rgba(255, 255, 255, 0.2);
     text-decoration: none;
+    color: var(--warna-putih);
 }
 
 .nav-item.active {
@@ -100,8 +110,13 @@ a:hover {
     margin-bottom: 40px;
 }
 
+.page-title h2 {
+    margin-bottom: 8px;
+}
+
 .page-title p {
     color: var(--warna-teks-muda);
+    text-align: center;
 }
 
 
@@ -128,6 +143,26 @@ a:hover {
 .kategori-item p {
     color: var(--warna-teks-muda);
     font-size: 15px;
+    margin-bottom: 12px;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: var(--warna-utama);
+    color: var(--warna-putih);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--warna-utama-gelap);
+    color: var(--warna-putih);
+    text-decoration: none;
 }
 
 
@@ -141,13 +176,18 @@ a:hover {
 }
 
 
+
+
 @media (max-width: 768px) {
+
+    
     .site-header {
         flex-direction: column;
         text-align: center;
         padding: 16px;
     }
 
+    
     .nav-menu ul {
         flex-direction: column;
         gap: 8px;
@@ -161,11 +201,37 @@ a:hover {
         padding: 8px 16px;
     }
 
+    
     .container {
         margin: 24px auto;
         padding: 0 16px;
     }
 
+    
+    h1 { font-size: 24px; }
     h2 { font-size: 22px; }
     h3 { font-size: 18px; }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .kategori-item {
+        padding: 18px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .page-title h2 {
+        font-size: 20px;
+    }
+
+    .kategori-item {
+        padding: 16px;
+    }
 }
