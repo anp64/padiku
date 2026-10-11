@@ -4,54 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padiku</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">    
 </head>
 <body>
    
-    <header class="site-header">
-        <h1 class="logo">Padiku</h1>
-        <nav class="nav-menu">
-            <ul>
-            <li><a href="index.html" class="nav-item">Beranda</a></li>
-            <li><a href="kategori.html" class="nav-item">Kategori</a></li>
-            <li><a href="artikel.html" class="nav-item">Artikel</a></li>
-            <li><a href="tentang.html" class="nav-item">Tentang</a></li>
-            <li><a href="kontak.html" class="nav-item">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-padiku">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Padiku</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kategori.html">Kategori</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artikel.html">Artikel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
-    <main>
-        
-        <h2>kategori</h2>
-        <p>kategori seputar padiku</p>
+    <main class="container my-5">
+        <div class="page-title">
+            <h1>Jelajahi Kategori</h1>
+            <p>Pilih topik yang mau kamu pelajari seputar padi.</p>
+        </div>
 
-        <section class="kategori-item">
-            <h3>budidaya</h3>
-            <p>panduan menanam padi mulai dari pemilihan bibit penanaman sampai perawatan harian</p>
-        </section>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card card-padiku h-100 shadow-sm">
+                    <div class="card-body p-4">
+                        <h4>Budidaya</h4>
+                        <p class="text-muted">Panduan menanam padi dari persiapan lahan, pemilihan benih, sampai perawatan harian.</p>
+                        <a href="artikel.html" class="btn btn-padiku btn-sm">Lihat Artikel →</a>
+                    </div>
+                </div>
+            </div>
 
-        <section class="kategori-item">
-            <h3>hama dan penyakit</h3>
-            <p>disini fokusnya adalah mengenali jenis hama pada padi dan cara mengatasinya</p>
-        </section>
+            <div class="col-md-6">
+                <div class="card card-padiku h-100 shadow-sm">
+                    <div class="card-body p-4">
+                        <h4>Hama &amp; Penyakit</h4>
+                        <p class="text-muted">Cara mengenali dan mengendalikan hama serta penyakit padi dengan aman.</p>
+                        <a href="artikel.html" class="btn btn-padiku btn-sm">Lihat Artikel →</a>
+                    </div>
+                </div>
+            </div>
 
-        <section class="kategori-item">
-            <h3>panen</h3>
-            <p>disini akan membahas bagaimana proses panen pada padi dari pengambilan padi sampai diolah menjadi beras</p>
-        </section>
+            <div class="col-md-6">
+                <div class="card card-padiku h-100 shadow-sm">
+                    <div class="card-body p-4">
+                        <h4>Pascapanen</h4>
+                        <p class="text-muted">Proses setelah panen: perontokan, pengeringan, penggilingan, sampai jadi beras.</p>
+                        <a href="artikel.html" class="btn btn-padiku btn-sm">Lihat Artikel →</a>
+                    </div>
+                </div>
+            </div>
 
-        <section class="kategori-item">
-            <h3>olahan sekam</h3>
-            <p>memanfaatkan sekam, dedak dengan baik dan benar</p>
-        </section>
-
+            <div class="col-md-6">
+                <div class="card card-padiku h-100 shadow-sm">
+                    <div class="card-body p-4">
+                        <h4>Olahan Sekam</h4>
+                        <p class="text-muted">Manfaatkan sekam, dedak, dan menir jadi barang berguna seperti arang sekam.</p>
+                        <a href="artikel.html" class="btn btn-padiku btn-sm">Lihat Artikel →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-
 
     <footer>
         <p>&copy; 2026 padiku</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

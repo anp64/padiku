@@ -3,69 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padiku</title>
-    <link rel="stylesheet" href="main.css">    
+    <title>Beranda — Padiku</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
    
-    <header class="site-header">
-        <h1 class="logo">Padiku</h1>
-        <nav class="nav-menu">
-            <ul>
-            <li><a href="index.html" class="nav-item">Beranda</a></li>
-            <li><a href="kategori.html" class="nav-item">Kategori</a></li>
-            <li><a href="artikel.html" class="nav-item">Artikel</a></li>
-            <li><a href="tentang.html" class="nav-item">Tentang</a></li>
-            <li><a href="kontak.html" class="nav-item">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-padiku">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Padiku</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kategori.html">Kategori</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="artikel.html">Artikel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <h2>artikel</h2>
-        <p>pada halaman ini akan menunjukkan artikel artikel seputar tentang padi</p>
+    <main class="container my-5">
+        <div class="page-title">
+            <h1>Daftar Artikel</h1>
+            <p>Kumpulan artikel seputar padi.</p>
+        </div>
 
-        <section class="artikel list">
-            <article class="artikel-card">
-                <span class="badge">budidaya</span>
-                <h3>cara menyemai benih padi yang benar</h3>
-                <p>sebelum menentukan hasil panen kenali dulu cara semai benih biar tumbuh serentak</p>
-                <a href="">baca selengkapnya -></a>
-            </article>
-        </section>
-
-        <section class="artikel list">
-            <article class="artikel-card">
-                <span class="badge">budidaya</span>
-                <h3>cara menyemai benih padi yang benar</h3>
-                <p>sebelum menentukan hasil panen kenali dulu cara semai benih biar tumbuh serentak</p>
-                <a href="">baca selengkapnya -></a>
-            </article>
-        </section>
-
-        <section class="artikel list">
-            <article class="artikel-card">
-                <span class="badge">budidaya</span>
-                <h3>cara menyemai benih padi yang benar</h3>
-                <p>sebelum menentukan hasil panen kenali dulu cara semai benih biar tumbuh serentak</p>
-                <a href="">baca selengkapnya -></a>
-            </article>
-        </section>
-
-        <section class="artikel list">
-            <article class="artikel-card">
-                <span class="badge">budidaya</span>
-                <h3>cara menyemai benih padi yang benar</h3>
-                <p>sebelum menentukan hasil panen kenali dulu cara semai benih biar tumbuh serentak</p>
-                <a href="">baca selengkapnya -></a>
-            </article>
-        </section>
-
-
+        <div class="table-responsive">
+            <table class="table table-hover table-padiku align-middle">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul</th>
+                        <th>Kategori</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Cara Menyemai Benih Padi yang Benar</td>
+                        <td><span class="badge badge-padiku">Budidaya</span></td>
+                        <td><a href="#" class="btn btn-padiku btn-sm">Baca</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mengenali dan Mengendalikan Wereng</td>
+                        <td><span class="badge badge-padiku">Hama</span></td>
+                        <td><a href="#" class="btn btn-padiku btn-sm">Baca</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Cara Mengeringkan Gabah Setelah Panen</td>
+                        <td><span class="badge badge-padiku">Pascapanen</span></td>
+                        <td><a href="#" class="btn btn-padiku btn-sm">Baca</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Mengubah Sekam Jadi Arang Sekam</td>
+                        <td><span class="badge badge-padiku">Sekam</span></td>
+                        <td><a href="#" class="btn btn-padiku btn-sm">Baca</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2026 padiku</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

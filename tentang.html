@@ -1,48 +1,59 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang — Padiku</title>
+    <title>Beranda — Padiku</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
-    <header class="site-header">
-        <h1 class="logo">Padiku</h1>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="index.html" class="nav-item">Beranda</a></li>
-                <li><a href="kategori.html" class="nav-item">Kategori</a></li>
-                <li><a href="artikel.html" class="nav-item">Artikel</a></li>
-                <li><a href="tentang.html" class="nav-item active">Tentang</a></li>
-                <li><a href="kontak.html" class="nav-item">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-padiku">
         <div class="container">
-            <div class="page-title">
-                <h2>Tentang Padiku</h2>
-                <p>Kenali siapa kami dan apa yang kami lakukan.</p>
+            <a class="navbar-brand" href="index.html">Padiku</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kategori.html">Kategori</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artikel.html">Artikel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
             </div>
+        </div>
+    </nav>
 
-            <section class="kategori-item">
-                <h3>Apa itu Padiku?</h3>
-                <p>Padiku adalah website edukasi seputar padi — dari cara nanam, basmi hama, sampai olah sekam jadi berguna.</p>
-            </section>
 
-            <section class="kategori-item">
-                <h3>Tujuan Kami</h3>
-                <p>Jadi tempat belajar yang ramah buat petani, penyuluh, mahasiswa, dan siapa aja yang tertarik sama padi.</p>
-            </section>
+    <main class="container my-5">
+        <div class="page-title">
+            <h1>Tentang Padiku</h1>
+            <p>Kenali siapa kami dan apa yang kami lakukan.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card card-padiku shadow-sm">
+                    <div class="card-body p-4">
+                        <h4>Apa itu Padiku?</h4>
+                        <p>Padiku adalah website edukasi seputar padi — dari cara nanam, basmi hama, sampai olah sekam jadi berguna.</p>
+                        <p>Tujuan kami: jadi tempat belajar yang ramah buat petani, penyuluh, mahasiswa, dan siapa aja yang tertarik sama padi.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer class="site-footer">
         <p>&copy; 2026 Padiku</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
