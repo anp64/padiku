@@ -85,7 +85,11 @@ $(document).ready(function() {
         } else {
             $("#alert-login").fadeOut();
             alert("Login berhasil!");
+            
+            setTimeout(function() {
+                alert("login berhasil");
+            }, 400);
         }
     });
-
+    
 });
